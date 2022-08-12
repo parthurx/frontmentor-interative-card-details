@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=League+Spartan:wght@400;500;700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Oxanium:wght@200;300;400;600;700;800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <div class="main-bg-mobile"></div>
+  
+  
+  <div class="left-side">
+    <div class="main-bg-desktop"></div>
+    
+      <div class="card-back">
+        <img src="images/bg-card-back.png" alt="">
+        <div class="card-back-cvc-information">
+          <p class="cvc-i">000</p>
+        </div>
+      </div>
+      <div class="front-card">
+        <img src="images/bg-card-front.png" alt="">
+        <div class="logo">
+          <div class="bola1"></div>
+          <div class="bola2"></div>
+        </div>
+        <div class="infomration-front-card">
+          <div class="card-number-information">
+            <h1 class="card-number"  >0000 0000 0000 0000</h1>
+          </div>
+          <div class="card-name-exp">
+          <p class="name-card" onkeyup="getName()">JANE APPLESEED</p>
+          <div class="paragrafos">
+          <p class="month-card">00</p> -
+          <p class="year-card">00</p>
+        </div>
+        </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="rightSide">
+    <form>
+      <div class="topInformation">
+      <p>CARDHOLDER NAME</p>
+      <input type="text" class="inputName" placeholder=" e.g Jane Apleseed" id="nameInput">
+      <label for="nameInput" id="name-input">Can't be blank, only alfa</label>
+      <p>CARD NUMBER</p>
+      <input type="text" onkeyup="getNumber()" class="inputNumber" placeholder=" e.g 1234 5678 9123 0000" id="cardNumber" maxlength="19"  >
+      <label for="cardNumber" id="number-error">Wrong format, numbers only</label>
+    </div>
+    <div class="information-exp">
+      <p>EXP.DATE (MM/YY)</p>
+      <p class="cvc-p">CVC</p>
+    </div>
+    <div class="information-exp-input">
+      <input type="text" onkeyup="getM()" class="mm" placeholder=" MM" maxlength="2" >
+      
+      <input type="text" onkeyup="getY()" class="yy" placeholder=" YY" maxlength="2">
+      
+      <input type="text" onkeyup="getCVC()" class="cvc-input" placeholder=" e.g 123" id="cvc" maxlength="3">
+      
+    </div>
+    <label for="mm" id="mm" >Can't be blank</label>
+    <label for="cvc" id="cvcLabel">Can't be blank</label>
+    <button type="submit" class="confirm">Confirmar</button>
+    </form>
+  </div>
+
+  <div class="complete-status">
+    <img src="images/icon-complete.svg" alt="">
+    <h1>THANK  YOU!</h1>
+    <p>We've added your card details</p>
+  </div>
+
+  <script src="js/main.js"></script>
+ 
+
+</body>
+</html>
+
+ 
+  <!--  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+   Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+   -->

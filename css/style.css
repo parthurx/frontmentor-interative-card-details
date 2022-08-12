@@ -1,0 +1,293 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Space Grotesk";
+    color: hsl(278, 68%, 11%);
+}
+input:hover{
+    border-color:hsl(278, 94%, 30%);
+    cursor: pointer;
+}
+.main-bg-desktop{
+    background-image: url("../images/bg-main-desktop.png");
+    background-size: cover;    
+    height: 100vh;
+    width: 40%;
+}
+
+
+
+.front-card img{
+    max-width:100%;
+	height:auto;
+   
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+}
+
+.card-back img{
+    max-width:100%;
+	height:auto;
+    position: absolute;
+    bottom: 18%;
+    left: 25%;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 65px;
+    position: absolute;
+    top: 23%;
+    left: 23%;
+}
+.bola1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+.bola2{
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding-top: 10px;
+}
+
+
+.card-number-information h1{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    font-size: 32px;
+    color: hsl(270, 3%, 87%);
+    
+}
+
+.card-name-exp{
+    width: 380px;
+    color:hsl(270, 3%, 87%);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    left: 23%;
+}
+
+.paragrafos{
+    display: flex;
+}
+
+.card-back-cvc-information p{
+    color: hsl(270, 3%, 87%);
+    position: absolute;
+    bottom: 30.8%;
+    left: 50%;
+}
+
+.rightSide{
+    position: absolute;
+    top: 30%;
+    right: 8%;;
+    width: 360px;
+    height: 300px;
+}
+
+.topInformation input{
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 7px;
+}
+
+
+
+.topInformation p{
+    margin-top: 20px;
+}
+
+.information-exp{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.cvc-p{
+    margin-left: 50px;
+}
+
+
+.information-exp-input{
+   display: flex;
+    
+}
+.mm,
+.yy{
+    width: 75px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.yy{
+    margin-left: 10px;
+}
+
+.cvc-input{
+    margin-top: 10px;
+    margin-left: 27px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.complete-status{
+    position: absolute;
+    right: 11%;
+    top: 36%;
+    width: 400px;
+    display: none;
+  
+}
+
+.complete-status img{
+    margin-left: 40%;
+    margin-bottom: 15%;
+}
+
+.complete-status h1{
+    letter-spacing: 0.5rem;
+    margin-left: 15% ;
+    font-size: 32px;
+}
+
+.complete-status p{
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 21px;
+}
+button{
+    border-radius: 7px;
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+    background-color:hsl(278, 68%, 11%);
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    color: white;
+    
+}
+
+label{
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+
+#cvcLabel{
+    margin-left: 190px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(278, 94%, 30%)
+}
+
+    
+
+
+
+
+@media only screen and (max-width: 375px) {
+    .main-bg-mobile{
+        display: flex;
+        align-items: flex-start;
+        background-image: url("../images/bg-main-mobile.png");
+        background-size: cover;
+        width: 375px;
+        height: 240px;
+        
+    }
+
+    .main-bg-desktop{
+        background-image: none;
+    }
+    .front-card img{
+        width: 70%;
+        left: 5%;
+        top: 16%;
+        
+    }
+    .card-back img{
+        width: 70%;
+        top: 6%;
+        left: 20%;
+    }
+    .logo{
+        width: 50px;
+        top: 16%;
+        left: 10%;
+    }
+    .bola1{
+        width: 30px;
+        height: 30px;
+    }
+    .bola2{
+        width: 12px;
+        height: 12px;
+    }
+    .card-number-information h1{
+        font-size: 20px;
+        top: 25%;
+        left: 10%;
+    }
+    .card-name-exp{
+        width: 230px;
+        top: 30%;
+        left: 10%;
+        font-size: 12px;
+    }
+    .card-back-cvc-information p{
+        bottom: 0%;
+        top: 13.3%;
+        left: 75%;
+        font-size: 12px;
+    }
+
+    .rightSide{
+        width: 300px;
+        left: 10%;
+        right: 0;
+        top: 45%;
+    }
+    h1, p{
+        font-size: 13px;
+    }
+    .complete-status{
+        left: 0;
+    
+    }
+}
+
+@media only screen and (max-width: 1920px){
+    .card-name-exp{
+        bottom: 0;
+        top: 42%;
+    }
+    .card-back-cvc-information{ 
+        position: absolute;
+        left: 44%;
+        bottom: 29.5%;
+    }
+}
